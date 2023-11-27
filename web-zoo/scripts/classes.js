@@ -15,7 +15,7 @@ class Animal {
   speak(phrase) {
     if (!phrase) return "";
 
-    let animalPhrase = phrase.split(" ").join(` ${this.sound} `);
+    let animalPhrase = phrase.trim().split(" ").join(` ${this.sound} `);
 
     //Add the animal sound at the end
     animalPhrase += ` ${this.sound}`;
