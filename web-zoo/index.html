@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://woodstock-prod-cdn.rotundasoftware.com/assets/deployed/rotunda/global-assets/favicon-rotunda.ico"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Digital Zoo - Rotunda</title>
+  </head>
+  <body>
+    <header>
+      <img src="./assets/rotunda_logo.svg" alt="Rotunda logo" />
+      <a href="">
+        <img src="./assets/github-icon.svg" alt=" Github icon" width="30" />
+      </a>
+    </header>
+    <main>
+      <section class="intro">
+        <h1>Welcome to <span class="highlight">Digital Zoo</span></h1>
+        <p>Pick an animal, write something funny and let it speak for you!</p>
+      </section>
+
+      <section class="app">
+        <article id="animalPicker"></article>
+        <section class="box-wrapper">
+          <textarea
+            class="box"
+            maxlength="250"
+            id="input-text"
+            placeholder="Enter a text"
+          >
+          </textarea>
+          <div class="box result-box">
+            <p id="result"></p>
+          </div>
+        </section>
+      </section>
+
+      <button id="copy-btn">
+        <img width="35" src="./assets/copy.svg" alt="Copy to clipboard" />
+      </button>
+
+      <button id="speak-btn">Speak</button>
+    </main>
+    <script type="module" src="./scripts/index.js"></script>
+  </body>
+</html>
